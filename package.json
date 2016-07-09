@@ -1,0 +1,42 @@
+{
+  "name": "generate-gitignore",
+  "description": "Generate a .gitignore file.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/generate-gitignore",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/generate-gitignore",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/generate-gitignore/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "matched": "^0.4.3"
+  },
+  "devDependencies": {
+    "gulp-format-md": "*",
+    "mocha": "*"
+  },
+  "keywords": [],
+  "verb": {
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "verb"
+    ]
+  }
+}
