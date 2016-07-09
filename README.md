@@ -90,15 +90,7 @@ $ gen help
 
 ## Running multiple generators
 
-[generate](https://github.com/generate/generate) supports running multiple generators at once. Here are some examples of other generators that work well with `generate-gitignore`.
-
-### generate-install
-
-Run [generate-install](https://github.com/generate/generate-install) **after** this generator to prompt to install any `dependencies` or `devDependencies` necessary for the generated files.
-
-**Example**
-
-![generate-gitignore generate-install example](https://raw.githubusercontent.com/jonschlinkert/generate-gitignore/master/docs/demo-install.gif)
+[generate](https://github.com/generate/generate) supports running multiple generators at once. Here is an example of a generator that works well with `generate-gitignore`.
 
 ### generate-dest
 
