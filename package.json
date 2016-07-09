@@ -1,6 +1,6 @@
 {
   "name": "generate-gitignore",
-  "description": "Generate a .gitignore file.",
+  "description": "Generate a .gitignore file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/generate-gitignore",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -12,6 +12,7 @@
   "files": [
     "index.js",
     "LICENSE",
+    "README.md",
     "templates"
   ],
   "main": "index.js",
@@ -22,8 +23,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-valid-app": "^0.2.0",
-    "set-directory": "^0.1.0"
+    "is-valid-app": "^0.2.0"
   },
   "devDependencies": {
     "delete": "^0.3.2",
@@ -67,15 +67,26 @@
     "yo"
   ],
   "verb": {
-    "layout": "default",
+    "toc": false,
+    "layout": "generator",
+    "tasks": [
+      "readme"
+    ],
     "plugins": [
       "gulp-format-md"
     ],
-    "related": {
-      "list": []
-    },
     "reflinks": [
-      "verb"
-    ]
+      "assemble",
+      "base",
+      "generate",
+      "generate-dest",
+      "generate-install",
+      "gulp",
+      "verb",
+      "verb-readme-generator"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
