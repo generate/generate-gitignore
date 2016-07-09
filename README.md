@@ -1,4 +1,4 @@
-# generate-gitignore [![NPM version](https://img.shields.io/npm/v/generate-gitignore.svg?style=flat)](https://www.npmjs.com/package/generate-gitignore) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitignore.svg?style=flat)](https://npmjs.org/package/generate-gitignore) [![Build Status](https://img.shields.io/travis/jonschlinkert/generate-gitignore.svg?style=flat)](https://travis-ci.org/jonschlinkert/generate-gitignore)
+# generate-gitignore [![NPM version](https://img.shields.io/npm/v/generate-gitignore.svg?style=flat)](https://www.npmjs.com/package/generate-gitignore) [![NPM downloads](https://img.shields.io/npm/dm/generate-gitignore.svg?style=flat)](https://npmjs.org/package/generate-gitignore) [![Build Status](https://img.shields.io/travis/generate/generate-gitignore.svg?style=flat)](https://travis-ci.org/generate/generate-gitignore)
 
 Generate a .gitignore file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.
 
@@ -16,7 +16,7 @@ For more information about Generate:
 
 Templates are [customizable](#customization) and can be overridden.
 
-![generate-gitignore demo](https://raw.githubusercontent.com/jonschlinkert/generate-gitignore/master/docs/demo.gif)
+![generate-gitignore demo](https://raw.githubusercontent.com/generate/generate-gitignore/master/docs/demo.gif)
 
 <br>
 <br>
@@ -98,7 +98,7 @@ Run [generate-dest](https://github.com/generate/generate-dest) **before** this g
 
 **Example**
 
-![generate-gitignore generate-dest example](https://raw.githubusercontent.com/jonschlinkert/generate-gitignore/master/docs/demo-dest.gif)
+![generate-gitignore generate-dest example](https://raw.githubusercontent.com/generate/generate-gitignore/master/docs/demo-dest.gif)
 
 ## API usage
 
@@ -262,7 +262,7 @@ $ npm install -d && npm test
 ## License
 
 Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
-Released under the [MIT license](https://github.com/jonschlinkert/generate-gitignore/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/generate/generate-gitignore/blob/master/LICENSE).
 
 ***
 
