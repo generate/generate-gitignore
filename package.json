@@ -10,7 +10,9 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "LICENSE",
+    "templates"
   ],
   "main": "index.js",
   "engines": {
@@ -20,13 +22,50 @@
     "test": "mocha"
   },
   "dependencies": {
-    "matched": "^0.4.3"
+    "is-valid-app": "^0.2.0",
+    "set-directory": "^0.1.0"
   },
   "devDependencies": {
-    "gulp-format-md": "*",
-    "mocha": "*"
+    "delete": "^0.3.2",
+    "generate": "^0.8.3",
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.5.3",
+    "npm-install-global": "^0.1.2"
   },
-  "keywords": [],
+  "keywords": [
+    "boilerplate",
+    "build",
+    "cli",
+    "cli-app",
+    "command-line",
+    "create",
+    "dev",
+    "development",
+    "framework",
+    "front",
+    "frontend",
+    "generate",
+    "generate-generator",
+    "generate-plugin",
+    "generategenerator",
+    "generateplugin",
+    "generator",
+    "gitignore",
+    "init",
+    "initialize",
+    "new",
+    "plugin",
+    "project",
+    "projects",
+    "scaffold",
+    "scaffolder",
+    "scaffolding",
+    "template",
+    "templates",
+    "webapp",
+    "yeoman",
+    "yo"
+  ],
   "verb": {
     "layout": "default",
     "plugins": [
