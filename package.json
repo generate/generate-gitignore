@@ -1,7 +1,7 @@
 {
   "name": "generate-gitignore",
-  "description": "Generate a .gitignore file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
-  "version": "0.1.1",
+  "description": "Generate a .gitignore file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator to make it a continuous part of the build workflow when scaffolding out a new project.",
+  "version": "0.1.2",
   "homepage": "https://github.com/generate/generate-gitignore",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "generate/generate-gitignore",
@@ -67,8 +67,8 @@
     "yo"
   ],
   "verb": {
-    "toc": false,
-    "layout": "generator",
+    "toc": true,
+    "layout": "common-minimal",
     "tasks": [
       "readme"
     ],
