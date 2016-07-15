@@ -1,6 +1,5 @@
 'use strict';
 
-var path = require('path');
 var isValid = require('is-valid-app');
 
 module.exports = function(app) {
@@ -20,8 +19,7 @@ module.exports = function(app) {
 
   app.task('default', ['gitignore']);
   app.task('gitignore', function(cb) {
-    var cwd = app.dir || path.resolve(__dirname, 'templates');
-    return app.src('_gitignore', {cwd: cwd})
+    return app.src('templates/_gitignore', {cwd: __dirname})
       .pipe(app.conflicts(app.cwd))
       .pipe(app.dest(app.cwd));
   });
