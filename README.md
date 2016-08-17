@@ -149,6 +149,8 @@ $ gen gitignore:global
 
 The following local `.gitignore` files are available.
 
+![generate-gitignore node](https://raw.githubusercontent.com/generate/generate-gitignore/master/docs/demo-node.gif)
+
 #### [actionscript](generators/gitignore.js#L17)
 
 Generate a `.gitignore` file for Actionscript to the current working directory.
