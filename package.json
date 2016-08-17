@@ -1,6 +1,6 @@
 {
   "name": "generate-gitignore",
-  "description": "Generate a .gitignore file from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator to make it a continuous part of the build workflow when scaffolding out a new project.",
+  "description": "Generate any local or global .gitignore file from the github/gitignore repository. Use from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
   "version": "0.1.2",
   "homepage": "https://github.com/generate/generate-gitignore",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -10,10 +10,11 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
     "LICENSE",
     "README.md",
-    "templates"
+    "index.js",
+    "templates",
+    "utils.js"
   ],
   "main": "index.js",
   "engines": {
@@ -23,13 +24,28 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-valid-app": "^0.2.0"
+    "extend-shallow": "^2.0.1",
+    "generate-defaults": "^0.6.0",
+    "git-config-path": "^0.2.0",
+    "gulp-autocomplete-prompt": "^0.1.0",
+    "is-valid-app": "^0.2.0",
+    "lazy-cache": "^2.0.1",
+    "parse-git-config": "^0.4.2",
+    "resolve-dir": "^0.1.1",
+    "through2": "^2.0.1",
+    "vinyl": "^1.2.0"
   },
   "devDependencies": {
+    "bdd-stdin": "^0.2.0",
+    "copy": "^0.3.0",
     "delete": "^0.3.2",
-    "generate": "^0.8.3",
-    "gulp-format-md": "^0.1.9",
-    "mocha": "^2.5.3",
+    "generate": "^0.11.0",
+    "gh-clone": "^0.5.0",
+    "gulp": "^3.9.1",
+    "gulp-format-md": "^0.1.10",
+    "helper-changelog": "^0.3.0",
+    "intercept-stdout": "^0.1.2",
+    "mocha": "^3.0.2",
     "npm-install-global": "^0.1.2"
   },
   "keywords": [
@@ -68,13 +84,24 @@
   ],
   "verb": {
     "toc": true,
-    "layout": "common-minimal",
+    "layout": "generator",
     "tasks": [
       "readme"
+    ],
+    "helpers": [
+      "helper-changelog"
     ],
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "generate-gitattributes",
+        "generate-git",
+        "generate-project",
+        "generate-eslint"
+      ]
+    },
     "reflinks": [
       "assemble",
       "base",

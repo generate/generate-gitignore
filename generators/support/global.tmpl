@@ -1,0 +1,37 @@
+---
+rename:
+  dirname: 'generators'
+  basename: 'gitignore-global.js'
+---
+'use strict';
+
+module.exports = function(app) {
+
+<% tasks.forEach(function(task) { %>  /**
+   * Generate a `<%= task.basename %>` file for <%= task.description %> to the current
+   * working directory.
+   *
+   * ```sh
+   * $ gen <%= alias %>.global:<%= task.name %>
+   * $ gen <%= alias %>.global:<%= task.name %> --dest ./foo
+   * ```
+   * @name global.<%= task.name %>
+   * @api public
+   */
+
+  app.task('<%= task.name %>', { silent: true }, function() {
+    return file(app, '<%= task.path %>');
+  });
+
+<% }); %>};
+
+/**
+ * Generate a file
+ */
+
+function file(app, name) {
+  return app.src(name, { cwd: __dirname })
+    .pipe(app.renderFile('*')).on('error', console.log)
+    .pipe(app.conflicts(app.cwd))
+    .pipe(app.dest(app.cwd));
+}
