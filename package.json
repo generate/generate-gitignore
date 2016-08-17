@@ -1,7 +1,7 @@
 {
   "name": "generate-gitignore",
   "description": "Generate any local or global .gitignore file from the github/gitignore repository. Use from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/generate/generate-gitignore",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "generate/generate-gitignore",
@@ -10,9 +10,10 @@
   },
   "license": "MIT",
   "files": [
+    "generator.js",
+    "index.js",
     "LICENSE",
     "README.md",
-    "index.js",
     "templates",
     "utils.js"
   ],
@@ -96,10 +97,10 @@
     ],
     "related": {
       "list": [
-        "generate-gitattributes",
+        "generate-eslint",
         "generate-git",
-        "generate-project",
-        "generate-eslint"
+        "generate-gitattributes",
+        "generate-project"
       ]
     },
     "reflinks": [
