@@ -888,7 +888,18 @@ $ gen gitignore:metaprogrammingsystem
 $ gen gitignore:metaprogrammingsystem --dest ./foo
 ```
 
-#### [gitignore:nanoc](generators/gitignore.js#L1158)
+#### [gitignore:minimal](generators/gitignore.js#L1158)
+
+Generate a `.gitignore` file for Minimal to the current working directory.
+
+**Example**
+
+```sh
+$ gen gitignore:minimal
+$ gen gitignore:minimal --dest ./foo
+```
+
+#### [gitignore:nanoc](generators/gitignore.js#L1175)
 
 Generate a `.gitignore` file for Nanoc to the current working directory.
 
@@ -899,7 +910,7 @@ $ gen gitignore:nanoc
 $ gen gitignore:nanoc --dest ./foo
 ```
 
-#### [gitignore:nim](generators/gitignore.js#L1175)
+#### [gitignore:nim](generators/gitignore.js#L1192)
 
 Generate a `.gitignore` file for Nim to the current working directory.
 
@@ -910,7 +921,7 @@ $ gen gitignore:nim
 $ gen gitignore:nim --dest ./foo
 ```
 
-#### [gitignore:node](generators/gitignore.js#L1192)
+#### [gitignore:node](generators/gitignore.js#L1209)
 
 Generate a `.gitignore` file for Node to the current working directory.
 
@@ -921,7 +932,7 @@ $ gen gitignore:node
 $ gen gitignore:node --dest ./foo
 ```
 
-#### [gitignore:ocaml](generators/gitignore.js#L1209)
+#### [gitignore:ocaml](generators/gitignore.js#L1226)
 
 Generate a `.gitignore` file for OCaml to the current working directory.
 
@@ -932,7 +943,7 @@ $ gen gitignore:ocaml
 $ gen gitignore:ocaml --dest ./foo
 ```
 
-#### [gitignore:objective-c](generators/gitignore.js#L1226)
+#### [gitignore:objective-c](generators/gitignore.js#L1243)
 
 Generate a `.gitignore` file for Objective-C to the current working directory.
 
@@ -943,7 +954,7 @@ $ gen gitignore:objective-c
 $ gen gitignore:objective-c --dest ./foo
 ```
 
-#### [gitignore:opa](generators/gitignore.js#L1243)
+#### [gitignore:opa](generators/gitignore.js#L1260)
 
 Generate a `.gitignore` file for Opa to the current working directory.
 
@@ -954,7 +965,7 @@ $ gen gitignore:opa
 $ gen gitignore:opa --dest ./foo
 ```
 
-#### [gitignore:opencart](generators/gitignore.js#L1260)
+#### [gitignore:opencart](generators/gitignore.js#L1277)
 
 Generate a `.gitignore` file for OpenCart to the current working directory.
 
@@ -965,7 +976,7 @@ $ gen gitignore:opencart
 $ gen gitignore:opencart --dest ./foo
 ```
 
-#### [gitignore:oracleforms](generators/gitignore.js#L1277)
+#### [gitignore:oracleforms](generators/gitignore.js#L1294)
 
 Generate a `.gitignore` file for OracleForms to the current working directory.
 
@@ -976,7 +987,7 @@ $ gen gitignore:oracleforms
 $ gen gitignore:oracleforms --dest ./foo
 ```
 
-#### [gitignore:packer](generators/gitignore.js#L1294)
+#### [gitignore:packer](generators/gitignore.js#L1311)
 
 Generate a `.gitignore` file for Packer to the current working directory.
 
@@ -987,7 +998,7 @@ $ gen gitignore:packer
 $ gen gitignore:packer --dest ./foo
 ```
 
-#### [gitignore:perl](generators/gitignore.js#L1311)
+#### [gitignore:perl](generators/gitignore.js#L1328)
 
 Generate a `.gitignore` file for Perl to the current working directory.
 
@@ -998,7 +1009,7 @@ $ gen gitignore:perl
 $ gen gitignore:perl --dest ./foo
 ```
 
-#### [gitignore:phalcon](generators/gitignore.js#L1328)
+#### [gitignore:phalcon](generators/gitignore.js#L1345)
 
 Generate a `.gitignore` file for Phalcon to the current working directory.
 
@@ -1009,7 +1020,7 @@ $ gen gitignore:phalcon
 $ gen gitignore:phalcon --dest ./foo
 ```
 
-#### [gitignore:playframework](generators/gitignore.js#L1345)
+#### [gitignore:playframework](generators/gitignore.js#L1362)
 
 Generate a `.gitignore` file for PlayFramework to the current working directory.
 
@@ -1020,7 +1031,7 @@ $ gen gitignore:playframework
 $ gen gitignore:playframework --dest ./foo
 ```
 
-#### [gitignore:plone](generators/gitignore.js#L1362)
+#### [gitignore:plone](generators/gitignore.js#L1379)
 
 Generate a `.gitignore` file for Plone to the current working directory.
 
@@ -1031,7 +1042,7 @@ $ gen gitignore:plone
 $ gen gitignore:plone --dest ./foo
 ```
 
-#### [gitignore:prestashop](generators/gitignore.js#L1379)
+#### [gitignore:prestashop](generators/gitignore.js#L1396)
 
 Generate a `.gitignore` file for Prestashop to the current working directory.
 
@@ -1042,7 +1053,7 @@ $ gen gitignore:prestashop
 $ gen gitignore:prestashop --dest ./foo
 ```
 
-#### [gitignore:processing](generators/gitignore.js#L1396)
+#### [gitignore:processing](generators/gitignore.js#L1413)
 
 Generate a `.gitignore` file for Processing to the current working directory.
 
@@ -1053,7 +1064,7 @@ $ gen gitignore:processing
 $ gen gitignore:processing --dest ./foo
 ```
 
-#### [gitignore:python](generators/gitignore.js#L1413)
+#### [gitignore:python](generators/gitignore.js#L1430)
 
 Generate a `.gitignore` file for Python to the current working directory.
 
@@ -1064,7 +1075,7 @@ $ gen gitignore:python
 $ gen gitignore:python --dest ./foo
 ```
 
-#### [gitignore:qooxdoo](generators/gitignore.js#L1430)
+#### [gitignore:qooxdoo](generators/gitignore.js#L1447)
 
 Generate a `.gitignore` file for Qooxdoo to the current working directory.
 
@@ -1075,7 +1086,7 @@ $ gen gitignore:qooxdoo
 $ gen gitignore:qooxdoo --dest ./foo
 ```
 
-#### [gitignore:qt](generators/gitignore.js#L1447)
+#### [gitignore:qt](generators/gitignore.js#L1464)
 
 Generate a `.gitignore` file for Qt to the current working directory.
 
@@ -1086,7 +1097,7 @@ $ gen gitignore:qt
 $ gen gitignore:qt --dest ./foo
 ```
 
-#### [gitignore:r](generators/gitignore.js#L1464)
+#### [gitignore:r](generators/gitignore.js#L1481)
 
 Generate a `.gitignore` file for R to the current working directory.
 
@@ -1097,7 +1108,7 @@ $ gen gitignore:r
 $ gen gitignore:r --dest ./foo
 ```
 
-#### [gitignore:ros](generators/gitignore.js#L1481)
+#### [gitignore:ros](generators/gitignore.js#L1498)
 
 Generate a `.gitignore` file for ROS to the current working directory.
 
@@ -1108,7 +1119,7 @@ $ gen gitignore:ros
 $ gen gitignore:ros --dest ./foo
 ```
 
-#### [gitignore:rails](generators/gitignore.js#L1498)
+#### [gitignore:rails](generators/gitignore.js#L1515)
 
 Generate a `.gitignore` file for Rails to the current working directory.
 
@@ -1119,7 +1130,7 @@ $ gen gitignore:rails
 $ gen gitignore:rails --dest ./foo
 ```
 
-#### [gitignore:rhodesrhomobile](generators/gitignore.js#L1515)
+#### [gitignore:rhodesrhomobile](generators/gitignore.js#L1532)
 
 Generate a `.gitignore` file for RhodesRhomobile to the current working directory.
 
@@ -1130,7 +1141,7 @@ $ gen gitignore:rhodesrhomobile
 $ gen gitignore:rhodesrhomobile --dest ./foo
 ```
 
-#### [gitignore:ruby](generators/gitignore.js#L1532)
+#### [gitignore:ruby](generators/gitignore.js#L1549)
 
 Generate a `.gitignore` file for Ruby to the current working directory.
 
@@ -1141,7 +1152,7 @@ $ gen gitignore:ruby
 $ gen gitignore:ruby --dest ./foo
 ```
 
-#### [gitignore:rust](generators/gitignore.js#L1549)
+#### [gitignore:rust](generators/gitignore.js#L1566)
 
 Generate a `.gitignore` file for Rust to the current working directory.
 
@@ -1152,7 +1163,7 @@ $ gen gitignore:rust
 $ gen gitignore:rust --dest ./foo
 ```
 
-#### [gitignore:scons](generators/gitignore.js#L1566)
+#### [gitignore:scons](generators/gitignore.js#L1583)
 
 Generate a `.gitignore` file for SCons to the current working directory.
 
@@ -1163,7 +1174,7 @@ $ gen gitignore:scons
 $ gen gitignore:scons --dest ./foo
 ```
 
-#### [gitignore:sass](generators/gitignore.js#L1583)
+#### [gitignore:sass](generators/gitignore.js#L1600)
 
 Generate a `.gitignore` file for Sass to the current working directory.
 
@@ -1174,7 +1185,7 @@ $ gen gitignore:sass
 $ gen gitignore:sass --dest ./foo
 ```
 
-#### [gitignore:scala](generators/gitignore.js#L1600)
+#### [gitignore:scala](generators/gitignore.js#L1617)
 
 Generate a `.gitignore` file for Scala to the current working directory.
 
@@ -1185,7 +1196,7 @@ $ gen gitignore:scala
 $ gen gitignore:scala --dest ./foo
 ```
 
-#### [gitignore:scheme](generators/gitignore.js#L1617)
+#### [gitignore:scheme](generators/gitignore.js#L1634)
 
 Generate a `.gitignore` file for Scheme to the current working directory.
 
@@ -1196,7 +1207,7 @@ $ gen gitignore:scheme
 $ gen gitignore:scheme --dest ./foo
 ```
 
-#### [gitignore:scrivener](generators/gitignore.js#L1634)
+#### [gitignore:scrivener](generators/gitignore.js#L1651)
 
 Generate a `.gitignore` file for Scrivener to the current working directory.
 
@@ -1207,7 +1218,7 @@ $ gen gitignore:scrivener
 $ gen gitignore:scrivener --dest ./foo
 ```
 
-#### [gitignore:sdcc](generators/gitignore.js#L1651)
+#### [gitignore:sdcc](generators/gitignore.js#L1668)
 
 Generate a `.gitignore` file for Sdcc to the current working directory.
 
@@ -1218,7 +1229,7 @@ $ gen gitignore:sdcc
 $ gen gitignore:sdcc --dest ./foo
 ```
 
-#### [gitignore:seamgen](generators/gitignore.js#L1668)
+#### [gitignore:seamgen](generators/gitignore.js#L1685)
 
 Generate a `.gitignore` file for SeamGen to the current working directory.
 
@@ -1229,7 +1240,7 @@ $ gen gitignore:seamgen
 $ gen gitignore:seamgen --dest ./foo
 ```
 
-#### [gitignore:sketchup](generators/gitignore.js#L1685)
+#### [gitignore:sketchup](generators/gitignore.js#L1702)
 
 Generate a `.gitignore` file for SketchUp to the current working directory.
 
@@ -1240,7 +1251,7 @@ $ gen gitignore:sketchup
 $ gen gitignore:sketchup --dest ./foo
 ```
 
-#### [gitignore:smalltalk](generators/gitignore.js#L1702)
+#### [gitignore:smalltalk](generators/gitignore.js#L1719)
 
 Generate a `.gitignore` file for Smalltalk to the current working directory.
 
@@ -1251,7 +1262,7 @@ $ gen gitignore:smalltalk
 $ gen gitignore:smalltalk --dest ./foo
 ```
 
-#### [gitignore:stella](generators/gitignore.js#L1719)
+#### [gitignore:stella](generators/gitignore.js#L1736)
 
 Generate a `.gitignore` file for Stella to the current working directory.
 
@@ -1262,7 +1273,7 @@ $ gen gitignore:stella
 $ gen gitignore:stella --dest ./foo
 ```
 
-#### [gitignore:sugarcrm](generators/gitignore.js#L1736)
+#### [gitignore:sugarcrm](generators/gitignore.js#L1753)
 
 Generate a `.gitignore` file for SugarCRM to the current working directory.
 
@@ -1273,7 +1284,7 @@ $ gen gitignore:sugarcrm
 $ gen gitignore:sugarcrm --dest ./foo
 ```
 
-#### [gitignore:swift](generators/gitignore.js#L1753)
+#### [gitignore:swift](generators/gitignore.js#L1770)
 
 Generate a `.gitignore` file for Swift to the current working directory.
 
@@ -1284,7 +1295,7 @@ $ gen gitignore:swift
 $ gen gitignore:swift --dest ./foo
 ```
 
-#### [gitignore:symfony](generators/gitignore.js#L1770)
+#### [gitignore:symfony](generators/gitignore.js#L1787)
 
 Generate a `.gitignore` file for Symfony to the current working directory.
 
@@ -1295,7 +1306,7 @@ $ gen gitignore:symfony
 $ gen gitignore:symfony --dest ./foo
 ```
 
-#### [gitignore:symphonycms](generators/gitignore.js#L1787)
+#### [gitignore:symphonycms](generators/gitignore.js#L1804)
 
 Generate a `.gitignore` file for SymphonyCMS to the current working directory.
 
@@ -1306,7 +1317,7 @@ $ gen gitignore:symphonycms
 $ gen gitignore:symphonycms --dest ./foo
 ```
 
-#### [gitignore:tex](generators/gitignore.js#L1804)
+#### [gitignore:tex](generators/gitignore.js#L1821)
 
 Generate a `.gitignore` file for TeX to the current working directory.
 
@@ -1317,7 +1328,7 @@ $ gen gitignore:tex
 $ gen gitignore:tex --dest ./foo
 ```
 
-#### [gitignore:terraform](generators/gitignore.js#L1821)
+#### [gitignore:terraform](generators/gitignore.js#L1838)
 
 Generate a `.gitignore` file for Terraform to the current working directory.
 
@@ -1328,7 +1339,7 @@ $ gen gitignore:terraform
 $ gen gitignore:terraform --dest ./foo
 ```
 
-#### [gitignore:textpattern](generators/gitignore.js#L1838)
+#### [gitignore:textpattern](generators/gitignore.js#L1855)
 
 Generate a `.gitignore` file for Textpattern to the current working directory.
 
@@ -1339,7 +1350,7 @@ $ gen gitignore:textpattern
 $ gen gitignore:textpattern --dest ./foo
 ```
 
-#### [gitignore:turbogears2](generators/gitignore.js#L1855)
+#### [gitignore:turbogears2](generators/gitignore.js#L1872)
 
 Generate a `.gitignore` file for TurboGears2 to the current working directory.
 
@@ -1350,7 +1361,7 @@ $ gen gitignore:turbogears2
 $ gen gitignore:turbogears2 --dest ./foo
 ```
 
-#### [gitignore:typo3](generators/gitignore.js#L1872)
+#### [gitignore:typo3](generators/gitignore.js#L1889)
 
 Generate a `.gitignore` file for Typo3 to the current working directory.
 
@@ -1361,7 +1372,7 @@ $ gen gitignore:typo3
 $ gen gitignore:typo3 --dest ./foo
 ```
 
-#### [gitignore:umbraco](generators/gitignore.js#L1889)
+#### [gitignore:umbraco](generators/gitignore.js#L1906)
 
 Generate a `.gitignore` file for Umbraco to the current working directory.
 
@@ -1372,7 +1383,7 @@ $ gen gitignore:umbraco
 $ gen gitignore:umbraco --dest ./foo
 ```
 
-#### [gitignore:unity](generators/gitignore.js#L1906)
+#### [gitignore:unity](generators/gitignore.js#L1923)
 
 Generate a `.gitignore` file for Unity to the current working directory.
 
@@ -1383,7 +1394,7 @@ $ gen gitignore:unity
 $ gen gitignore:unity --dest ./foo
 ```
 
-#### [gitignore:unrealengine](generators/gitignore.js#L1923)
+#### [gitignore:unrealengine](generators/gitignore.js#L1940)
 
 Generate a `.gitignore` file for UnrealEngine to the current working directory.
 
@@ -1394,7 +1405,7 @@ $ gen gitignore:unrealengine
 $ gen gitignore:unrealengine --dest ./foo
 ```
 
-#### [gitignore:vvvv](generators/gitignore.js#L1940)
+#### [gitignore:vvvv](generators/gitignore.js#L1957)
 
 Generate a `.gitignore` file for VVVV to the current working directory.
 
@@ -1405,7 +1416,7 @@ $ gen gitignore:vvvv
 $ gen gitignore:vvvv --dest ./foo
 ```
 
-#### [gitignore:visualstudio](generators/gitignore.js#L1957)
+#### [gitignore:visualstudio](generators/gitignore.js#L1974)
 
 Generate a `.gitignore` file for VisualStudio to the current working directory.
 
@@ -1416,7 +1427,7 @@ $ gen gitignore:visualstudio
 $ gen gitignore:visualstudio --dest ./foo
 ```
 
-#### [gitignore:waf](generators/gitignore.js#L1974)
+#### [gitignore:waf](generators/gitignore.js#L1991)
 
 Generate a `.gitignore` file for Waf to the current working directory.
 
@@ -1427,7 +1438,7 @@ $ gen gitignore:waf
 $ gen gitignore:waf --dest ./foo
 ```
 
-#### [gitignore:wordpress](generators/gitignore.js#L1991)
+#### [gitignore:wordpress](generators/gitignore.js#L2008)
 
 Generate a `.gitignore` file for WordPress to the current working directory.
 
@@ -1438,7 +1449,7 @@ $ gen gitignore:wordpress
 $ gen gitignore:wordpress --dest ./foo
 ```
 
-#### [gitignore:xojo](generators/gitignore.js#L2008)
+#### [gitignore:xojo](generators/gitignore.js#L2025)
 
 Generate a `.gitignore` file for Xojo to the current working directory.
 
@@ -1449,7 +1460,7 @@ $ gen gitignore:xojo
 $ gen gitignore:xojo --dest ./foo
 ```
 
-#### [gitignore:yeoman](generators/gitignore.js#L2025)
+#### [gitignore:yeoman](generators/gitignore.js#L2042)
 
 Generate a `.gitignore` file for Yeoman to the current working directory.
 
@@ -1460,7 +1471,7 @@ $ gen gitignore:yeoman
 $ gen gitignore:yeoman --dest ./foo
 ```
 
-#### [gitignore:yii](generators/gitignore.js#L2042)
+#### [gitignore:yii](generators/gitignore.js#L2059)
 
 Generate a `.gitignore` file for Yii to the current working directory.
 
@@ -1471,7 +1482,7 @@ $ gen gitignore:yii
 $ gen gitignore:yii --dest ./foo
 ```
 
-#### [gitignore:zendframework](generators/gitignore.js#L2059)
+#### [gitignore:zendframework](generators/gitignore.js#L2076)
 
 Generate a `.gitignore` file for ZendFramework to the current working directory.
 
@@ -1482,7 +1493,7 @@ $ gen gitignore:zendframework
 $ gen gitignore:zendframework --dest ./foo
 ```
 
-#### [gitignore:zephir](generators/gitignore.js#L2076)
+#### [gitignore:zephir](generators/gitignore.js#L2093)
 
 Generate a `.gitignore` file for Zephir to the current working directory.
 

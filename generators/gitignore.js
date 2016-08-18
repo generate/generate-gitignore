@@ -1144,6 +1144,23 @@ module.exports = function(app) {
   });
 
   /**
+   * Generate a `.gitignore` file for Minimal to the current
+   * working directory.
+   *
+   * ```sh
+   * $ gen gitignore:minimal
+   * $ gen gitignore:minimal --dest ./foo
+   * ```
+   * @name gitignore:minimal
+   * @api public
+   */
+
+  app.task('minimal', ['gitignore-minimal']);
+  app.task('gitignore-minimal', { silent: true }, function() {
+    return file(app, '../templates/Minimal.gitignore');
+  });
+
+  /**
    * Generate a `.gitignore` file for Nanoc to the current
    * working directory.
    *
