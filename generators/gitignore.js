@@ -1,5 +1,7 @@
 'use strict';
 
+var file = require('./file');
+
 module.exports = function(app) {
 
   /**
@@ -10,11 +12,12 @@ module.exports = function(app) {
    * $ gen gitignore:actionscript
    * $ gen gitignore:actionscript --dest ./foo
    * ```
-   * @name actionscript
+   * @name gitignore:actionscript
    * @api public
    */
 
-  app.task('actionscript', { silent: true }, function() {
+  app.task('actionscript', ['gitignore-actionscript']);
+  app.task('gitignore-actionscript', { silent: true }, function() {
     return file(app, '../templates/Actionscript.gitignore');
   });
 
@@ -26,11 +29,12 @@ module.exports = function(app) {
    * $ gen gitignore:ada
    * $ gen gitignore:ada --dest ./foo
    * ```
-   * @name ada
+   * @name gitignore:ada
    * @api public
    */
 
-  app.task('ada', { silent: true }, function() {
+  app.task('ada', ['gitignore-ada']);
+  app.task('gitignore-ada', { silent: true }, function() {
     return file(app, '../templates/Ada.gitignore');
   });
 
@@ -42,11 +46,12 @@ module.exports = function(app) {
    * $ gen gitignore:agda
    * $ gen gitignore:agda --dest ./foo
    * ```
-   * @name agda
+   * @name gitignore:agda
    * @api public
    */
 
-  app.task('agda', { silent: true }, function() {
+  app.task('agda', ['gitignore-agda']);
+  app.task('gitignore-agda', { silent: true }, function() {
     return file(app, '../templates/Agda.gitignore');
   });
 
@@ -58,11 +63,12 @@ module.exports = function(app) {
    * $ gen gitignore:android
    * $ gen gitignore:android --dest ./foo
    * ```
-   * @name android
+   * @name gitignore:android
    * @api public
    */
 
-  app.task('android', { silent: true }, function() {
+  app.task('android', ['gitignore-android']);
+  app.task('gitignore-android', { silent: true }, function() {
     return file(app, '../templates/Android.gitignore');
   });
 
@@ -74,11 +80,12 @@ module.exports = function(app) {
    * $ gen gitignore:appengine
    * $ gen gitignore:appengine --dest ./foo
    * ```
-   * @name appengine
+   * @name gitignore:appengine
    * @api public
    */
 
-  app.task('appengine', { silent: true }, function() {
+  app.task('appengine', ['gitignore-appengine']);
+  app.task('gitignore-appengine', { silent: true }, function() {
     return file(app, '../templates/AppEngine.gitignore');
   });
 
@@ -90,11 +97,12 @@ module.exports = function(app) {
    * $ gen gitignore:appceleratortitanium
    * $ gen gitignore:appceleratortitanium --dest ./foo
    * ```
-   * @name appceleratortitanium
+   * @name gitignore:appceleratortitanium
    * @api public
    */
 
-  app.task('appceleratortitanium', { silent: true }, function() {
+  app.task('appceleratortitanium', ['gitignore-appceleratortitanium']);
+  app.task('gitignore-appceleratortitanium', { silent: true }, function() {
     return file(app, '../templates/AppceleratorTitanium.gitignore');
   });
 
@@ -106,11 +114,12 @@ module.exports = function(app) {
    * $ gen gitignore:archlinuxpackages
    * $ gen gitignore:archlinuxpackages --dest ./foo
    * ```
-   * @name archlinuxpackages
+   * @name gitignore:archlinuxpackages
    * @api public
    */
 
-  app.task('archlinuxpackages', { silent: true }, function() {
+  app.task('archlinuxpackages', ['gitignore-archlinuxpackages']);
+  app.task('gitignore-archlinuxpackages', { silent: true }, function() {
     return file(app, '../templates/ArchLinuxPackages.gitignore');
   });
 
@@ -122,11 +131,12 @@ module.exports = function(app) {
    * $ gen gitignore:autotools
    * $ gen gitignore:autotools --dest ./foo
    * ```
-   * @name autotools
+   * @name gitignore:autotools
    * @api public
    */
 
-  app.task('autotools', { silent: true }, function() {
+  app.task('autotools', ['gitignore-autotools']);
+  app.task('gitignore-autotools', { silent: true }, function() {
     return file(app, '../templates/Autotools.gitignore');
   });
 
@@ -138,11 +148,12 @@ module.exports = function(app) {
    * $ gen gitignore:c++
    * $ gen gitignore:c++ --dest ./foo
    * ```
-   * @name c++
+   * @name gitignore:c++
    * @api public
    */
 
-  app.task('c++', { silent: true }, function() {
+  app.task('c++', ['gitignore-c++']);
+  app.task('gitignore-c++', { silent: true }, function() {
     return file(app, '../templates/C++.gitignore');
   });
 
@@ -154,11 +165,12 @@ module.exports = function(app) {
    * $ gen gitignore:c
    * $ gen gitignore:c --dest ./foo
    * ```
-   * @name c
+   * @name gitignore:c
    * @api public
    */
 
-  app.task('c', { silent: true }, function() {
+  app.task('c', ['gitignore-c']);
+  app.task('gitignore-c', { silent: true }, function() {
     return file(app, '../templates/C.gitignore');
   });
 
@@ -170,11 +182,12 @@ module.exports = function(app) {
    * $ gen gitignore:cfwheels
    * $ gen gitignore:cfwheels --dest ./foo
    * ```
-   * @name cfwheels
+   * @name gitignore:cfwheels
    * @api public
    */
 
-  app.task('cfwheels', { silent: true }, function() {
+  app.task('cfwheels', ['gitignore-cfwheels']);
+  app.task('gitignore-cfwheels', { silent: true }, function() {
     return file(app, '../templates/CFWheels.gitignore');
   });
 
@@ -186,11 +199,12 @@ module.exports = function(app) {
    * $ gen gitignore:cmake
    * $ gen gitignore:cmake --dest ./foo
    * ```
-   * @name cmake
+   * @name gitignore:cmake
    * @api public
    */
 
-  app.task('cmake', { silent: true }, function() {
+  app.task('cmake', ['gitignore-cmake']);
+  app.task('gitignore-cmake', { silent: true }, function() {
     return file(app, '../templates/CMake.gitignore');
   });
 
@@ -202,11 +216,12 @@ module.exports = function(app) {
    * $ gen gitignore:cuda
    * $ gen gitignore:cuda --dest ./foo
    * ```
-   * @name cuda
+   * @name gitignore:cuda
    * @api public
    */
 
-  app.task('cuda', { silent: true }, function() {
+  app.task('cuda', ['gitignore-cuda']);
+  app.task('gitignore-cuda', { silent: true }, function() {
     return file(app, '../templates/CUDA.gitignore');
   });
 
@@ -218,11 +233,12 @@ module.exports = function(app) {
    * $ gen gitignore:cakephp
    * $ gen gitignore:cakephp --dest ./foo
    * ```
-   * @name cakephp
+   * @name gitignore:cakephp
    * @api public
    */
 
-  app.task('cakephp', { silent: true }, function() {
+  app.task('cakephp', ['gitignore-cakephp']);
+  app.task('gitignore-cakephp', { silent: true }, function() {
     return file(app, '../templates/CakePHP.gitignore');
   });
 
@@ -234,11 +250,12 @@ module.exports = function(app) {
    * $ gen gitignore:chefcookbook
    * $ gen gitignore:chefcookbook --dest ./foo
    * ```
-   * @name chefcookbook
+   * @name gitignore:chefcookbook
    * @api public
    */
 
-  app.task('chefcookbook', { silent: true }, function() {
+  app.task('chefcookbook', ['gitignore-chefcookbook']);
+  app.task('gitignore-chefcookbook', { silent: true }, function() {
     return file(app, '../templates/ChefCookbook.gitignore');
   });
 
@@ -250,11 +267,12 @@ module.exports = function(app) {
    * $ gen gitignore:clojure
    * $ gen gitignore:clojure --dest ./foo
    * ```
-   * @name clojure
+   * @name gitignore:clojure
    * @api public
    */
 
-  app.task('clojure', { silent: true }, function() {
+  app.task('clojure', ['gitignore-clojure']);
+  app.task('gitignore-clojure', { silent: true }, function() {
     return file(app, '../templates/Clojure.gitignore');
   });
 
@@ -266,11 +284,12 @@ module.exports = function(app) {
    * $ gen gitignore:codeigniter
    * $ gen gitignore:codeigniter --dest ./foo
    * ```
-   * @name codeigniter
+   * @name gitignore:codeigniter
    * @api public
    */
 
-  app.task('codeigniter', { silent: true }, function() {
+  app.task('codeigniter', ['gitignore-codeigniter']);
+  app.task('gitignore-codeigniter', { silent: true }, function() {
     return file(app, '../templates/CodeIgniter.gitignore');
   });
 
@@ -282,11 +301,12 @@ module.exports = function(app) {
    * $ gen gitignore:commonlisp
    * $ gen gitignore:commonlisp --dest ./foo
    * ```
-   * @name commonlisp
+   * @name gitignore:commonlisp
    * @api public
    */
 
-  app.task('commonlisp', { silent: true }, function() {
+  app.task('commonlisp', ['gitignore-commonlisp']);
+  app.task('gitignore-commonlisp', { silent: true }, function() {
     return file(app, '../templates/CommonLisp.gitignore');
   });
 
@@ -298,11 +318,12 @@ module.exports = function(app) {
    * $ gen gitignore:composer
    * $ gen gitignore:composer --dest ./foo
    * ```
-   * @name composer
+   * @name gitignore:composer
    * @api public
    */
 
-  app.task('composer', { silent: true }, function() {
+  app.task('composer', ['gitignore-composer']);
+  app.task('gitignore-composer', { silent: true }, function() {
     return file(app, '../templates/Composer.gitignore');
   });
 
@@ -314,11 +335,12 @@ module.exports = function(app) {
    * $ gen gitignore:concrete5
    * $ gen gitignore:concrete5 --dest ./foo
    * ```
-   * @name concrete5
+   * @name gitignore:concrete5
    * @api public
    */
 
-  app.task('concrete5', { silent: true }, function() {
+  app.task('concrete5', ['gitignore-concrete5']);
+  app.task('gitignore-concrete5', { silent: true }, function() {
     return file(app, '../templates/Concrete5.gitignore');
   });
 
@@ -330,11 +352,12 @@ module.exports = function(app) {
    * $ gen gitignore:coq
    * $ gen gitignore:coq --dest ./foo
    * ```
-   * @name coq
+   * @name gitignore:coq
    * @api public
    */
 
-  app.task('coq', { silent: true }, function() {
+  app.task('coq', ['gitignore-coq']);
+  app.task('gitignore-coq', { silent: true }, function() {
     return file(app, '../templates/Coq.gitignore');
   });
 
@@ -346,11 +369,12 @@ module.exports = function(app) {
    * $ gen gitignore:craftcms
    * $ gen gitignore:craftcms --dest ./foo
    * ```
-   * @name craftcms
+   * @name gitignore:craftcms
    * @api public
    */
 
-  app.task('craftcms', { silent: true }, function() {
+  app.task('craftcms', ['gitignore-craftcms']);
+  app.task('gitignore-craftcms', { silent: true }, function() {
     return file(app, '../templates/CraftCMS.gitignore');
   });
 
@@ -362,11 +386,12 @@ module.exports = function(app) {
    * $ gen gitignore:d
    * $ gen gitignore:d --dest ./foo
    * ```
-   * @name d
+   * @name gitignore:d
    * @api public
    */
 
-  app.task('d', { silent: true }, function() {
+  app.task('d', ['gitignore-d']);
+  app.task('gitignore-d', { silent: true }, function() {
     return file(app, '../templates/D.gitignore');
   });
 
@@ -378,11 +403,12 @@ module.exports = function(app) {
    * $ gen gitignore:dm
    * $ gen gitignore:dm --dest ./foo
    * ```
-   * @name dm
+   * @name gitignore:dm
    * @api public
    */
 
-  app.task('dm', { silent: true }, function() {
+  app.task('dm', ['gitignore-dm']);
+  app.task('gitignore-dm', { silent: true }, function() {
     return file(app, '../templates/DM.gitignore');
   });
 
@@ -394,11 +420,12 @@ module.exports = function(app) {
    * $ gen gitignore:dart
    * $ gen gitignore:dart --dest ./foo
    * ```
-   * @name dart
+   * @name gitignore:dart
    * @api public
    */
 
-  app.task('dart', { silent: true }, function() {
+  app.task('dart', ['gitignore-dart']);
+  app.task('gitignore-dart', { silent: true }, function() {
     return file(app, '../templates/Dart.gitignore');
   });
 
@@ -410,11 +437,12 @@ module.exports = function(app) {
    * $ gen gitignore:delphi
    * $ gen gitignore:delphi --dest ./foo
    * ```
-   * @name delphi
+   * @name gitignore:delphi
    * @api public
    */
 
-  app.task('delphi', { silent: true }, function() {
+  app.task('delphi', ['gitignore-delphi']);
+  app.task('gitignore-delphi', { silent: true }, function() {
     return file(app, '../templates/Delphi.gitignore');
   });
 
@@ -426,11 +454,12 @@ module.exports = function(app) {
    * $ gen gitignore:drupal
    * $ gen gitignore:drupal --dest ./foo
    * ```
-   * @name drupal
+   * @name gitignore:drupal
    * @api public
    */
 
-  app.task('drupal', { silent: true }, function() {
+  app.task('drupal', ['gitignore-drupal']);
+  app.task('gitignore-drupal', { silent: true }, function() {
     return file(app, '../templates/Drupal.gitignore');
   });
 
@@ -442,11 +471,12 @@ module.exports = function(app) {
    * $ gen gitignore:episerver
    * $ gen gitignore:episerver --dest ./foo
    * ```
-   * @name episerver
+   * @name gitignore:episerver
    * @api public
    */
 
-  app.task('episerver', { silent: true }, function() {
+  app.task('episerver', ['gitignore-episerver']);
+  app.task('gitignore-episerver', { silent: true }, function() {
     return file(app, '../templates/EPiServer.gitignore');
   });
 
@@ -458,11 +488,12 @@ module.exports = function(app) {
    * $ gen gitignore:eagle
    * $ gen gitignore:eagle --dest ./foo
    * ```
-   * @name eagle
+   * @name gitignore:eagle
    * @api public
    */
 
-  app.task('eagle', { silent: true }, function() {
+  app.task('eagle', ['gitignore-eagle']);
+  app.task('gitignore-eagle', { silent: true }, function() {
     return file(app, '../templates/Eagle.gitignore');
   });
 
@@ -474,11 +505,12 @@ module.exports = function(app) {
    * $ gen gitignore:elisp
    * $ gen gitignore:elisp --dest ./foo
    * ```
-   * @name elisp
+   * @name gitignore:elisp
    * @api public
    */
 
-  app.task('elisp', { silent: true }, function() {
+  app.task('elisp', ['gitignore-elisp']);
+  app.task('gitignore-elisp', { silent: true }, function() {
     return file(app, '../templates/Elisp.gitignore');
   });
 
@@ -490,11 +522,12 @@ module.exports = function(app) {
    * $ gen gitignore:elixir
    * $ gen gitignore:elixir --dest ./foo
    * ```
-   * @name elixir
+   * @name gitignore:elixir
    * @api public
    */
 
-  app.task('elixir', { silent: true }, function() {
+  app.task('elixir', ['gitignore-elixir']);
+  app.task('gitignore-elixir', { silent: true }, function() {
     return file(app, '../templates/Elixir.gitignore');
   });
 
@@ -506,11 +539,12 @@ module.exports = function(app) {
    * $ gen gitignore:elm
    * $ gen gitignore:elm --dest ./foo
    * ```
-   * @name elm
+   * @name gitignore:elm
    * @api public
    */
 
-  app.task('elm', { silent: true }, function() {
+  app.task('elm', ['gitignore-elm']);
+  app.task('gitignore-elm', { silent: true }, function() {
     return file(app, '../templates/Elm.gitignore');
   });
 
@@ -522,11 +556,12 @@ module.exports = function(app) {
    * $ gen gitignore:erlang
    * $ gen gitignore:erlang --dest ./foo
    * ```
-   * @name erlang
+   * @name gitignore:erlang
    * @api public
    */
 
-  app.task('erlang', { silent: true }, function() {
+  app.task('erlang', ['gitignore-erlang']);
+  app.task('gitignore-erlang', { silent: true }, function() {
     return file(app, '../templates/Erlang.gitignore');
   });
 
@@ -538,11 +573,12 @@ module.exports = function(app) {
    * $ gen gitignore:expressionengine
    * $ gen gitignore:expressionengine --dest ./foo
    * ```
-   * @name expressionengine
+   * @name gitignore:expressionengine
    * @api public
    */
 
-  app.task('expressionengine', { silent: true }, function() {
+  app.task('expressionengine', ['gitignore-expressionengine']);
+  app.task('gitignore-expressionengine', { silent: true }, function() {
     return file(app, '../templates/ExpressionEngine.gitignore');
   });
 
@@ -554,11 +590,12 @@ module.exports = function(app) {
    * $ gen gitignore:extjs
    * $ gen gitignore:extjs --dest ./foo
    * ```
-   * @name extjs
+   * @name gitignore:extjs
    * @api public
    */
 
-  app.task('extjs', { silent: true }, function() {
+  app.task('extjs', ['gitignore-extjs']);
+  app.task('gitignore-extjs', { silent: true }, function() {
     return file(app, '../templates/ExtJs.gitignore');
   });
 
@@ -570,11 +607,12 @@ module.exports = function(app) {
    * $ gen gitignore:fancy
    * $ gen gitignore:fancy --dest ./foo
    * ```
-   * @name fancy
+   * @name gitignore:fancy
    * @api public
    */
 
-  app.task('fancy', { silent: true }, function() {
+  app.task('fancy', ['gitignore-fancy']);
+  app.task('gitignore-fancy', { silent: true }, function() {
     return file(app, '../templates/Fancy.gitignore');
   });
 
@@ -586,11 +624,12 @@ module.exports = function(app) {
    * $ gen gitignore:finale
    * $ gen gitignore:finale --dest ./foo
    * ```
-   * @name finale
+   * @name gitignore:finale
    * @api public
    */
 
-  app.task('finale', { silent: true }, function() {
+  app.task('finale', ['gitignore-finale']);
+  app.task('gitignore-finale', { silent: true }, function() {
     return file(app, '../templates/Finale.gitignore');
   });
 
@@ -602,11 +641,12 @@ module.exports = function(app) {
    * $ gen gitignore:forcedotcom
    * $ gen gitignore:forcedotcom --dest ./foo
    * ```
-   * @name forcedotcom
+   * @name gitignore:forcedotcom
    * @api public
    */
 
-  app.task('forcedotcom', { silent: true }, function() {
+  app.task('forcedotcom', ['gitignore-forcedotcom']);
+  app.task('gitignore-forcedotcom', { silent: true }, function() {
     return file(app, '../templates/ForceDotCom.gitignore');
   });
 
@@ -618,11 +658,12 @@ module.exports = function(app) {
    * $ gen gitignore:fortran
    * $ gen gitignore:fortran --dest ./foo
    * ```
-   * @name fortran
+   * @name gitignore:fortran
    * @api public
    */
 
-  app.task('fortran', { silent: true }, function() {
+  app.task('fortran', ['gitignore-fortran']);
+  app.task('gitignore-fortran', { silent: true }, function() {
     return file(app, '../templates/Fortran.gitignore');
   });
 
@@ -634,11 +675,12 @@ module.exports = function(app) {
    * $ gen gitignore:fuelphp
    * $ gen gitignore:fuelphp --dest ./foo
    * ```
-   * @name fuelphp
+   * @name gitignore:fuelphp
    * @api public
    */
 
-  app.task('fuelphp', { silent: true }, function() {
+  app.task('fuelphp', ['gitignore-fuelphp']);
+  app.task('gitignore-fuelphp', { silent: true }, function() {
     return file(app, '../templates/FuelPHP.gitignore');
   });
 
@@ -650,11 +692,12 @@ module.exports = function(app) {
    * $ gen gitignore:gwt
    * $ gen gitignore:gwt --dest ./foo
    * ```
-   * @name gwt
+   * @name gitignore:gwt
    * @api public
    */
 
-  app.task('gwt', { silent: true }, function() {
+  app.task('gwt', ['gitignore-gwt']);
+  app.task('gitignore-gwt', { silent: true }, function() {
     return file(app, '../templates/GWT.gitignore');
   });
 
@@ -666,11 +709,12 @@ module.exports = function(app) {
    * $ gen gitignore:gcov
    * $ gen gitignore:gcov --dest ./foo
    * ```
-   * @name gcov
+   * @name gitignore:gcov
    * @api public
    */
 
-  app.task('gcov', { silent: true }, function() {
+  app.task('gcov', ['gitignore-gcov']);
+  app.task('gitignore-gcov', { silent: true }, function() {
     return file(app, '../templates/Gcov.gitignore');
   });
 
@@ -682,11 +726,12 @@ module.exports = function(app) {
    * $ gen gitignore:gitbook
    * $ gen gitignore:gitbook --dest ./foo
    * ```
-   * @name gitbook
+   * @name gitignore:gitbook
    * @api public
    */
 
-  app.task('gitbook', { silent: true }, function() {
+  app.task('gitbook', ['gitignore-gitbook']);
+  app.task('gitignore-gitbook', { silent: true }, function() {
     return file(app, '../templates/GitBook.gitignore');
   });
 
@@ -698,11 +743,12 @@ module.exports = function(app) {
    * $ gen gitignore:go
    * $ gen gitignore:go --dest ./foo
    * ```
-   * @name go
+   * @name gitignore:go
    * @api public
    */
 
-  app.task('go', { silent: true }, function() {
+  app.task('go', ['gitignore-go']);
+  app.task('gitignore-go', { silent: true }, function() {
     return file(app, '../templates/Go.gitignore');
   });
 
@@ -714,11 +760,12 @@ module.exports = function(app) {
    * $ gen gitignore:gradle
    * $ gen gitignore:gradle --dest ./foo
    * ```
-   * @name gradle
+   * @name gitignore:gradle
    * @api public
    */
 
-  app.task('gradle', { silent: true }, function() {
+  app.task('gradle', ['gitignore-gradle']);
+  app.task('gitignore-gradle', { silent: true }, function() {
     return file(app, '../templates/Gradle.gitignore');
   });
 
@@ -730,11 +777,12 @@ module.exports = function(app) {
    * $ gen gitignore:grails
    * $ gen gitignore:grails --dest ./foo
    * ```
-   * @name grails
+   * @name gitignore:grails
    * @api public
    */
 
-  app.task('grails', { silent: true }, function() {
+  app.task('grails', ['gitignore-grails']);
+  app.task('gitignore-grails', { silent: true }, function() {
     return file(app, '../templates/Grails.gitignore');
   });
 
@@ -746,11 +794,12 @@ module.exports = function(app) {
    * $ gen gitignore:haskell
    * $ gen gitignore:haskell --dest ./foo
    * ```
-   * @name haskell
+   * @name gitignore:haskell
    * @api public
    */
 
-  app.task('haskell', { silent: true }, function() {
+  app.task('haskell', ['gitignore-haskell']);
+  app.task('gitignore-haskell', { silent: true }, function() {
     return file(app, '../templates/Haskell.gitignore');
   });
 
@@ -762,11 +811,12 @@ module.exports = function(app) {
    * $ gen gitignore:igorpro
    * $ gen gitignore:igorpro --dest ./foo
    * ```
-   * @name igorpro
+   * @name gitignore:igorpro
    * @api public
    */
 
-  app.task('igorpro', { silent: true }, function() {
+  app.task('igorpro', ['gitignore-igorpro']);
+  app.task('gitignore-igorpro', { silent: true }, function() {
     return file(app, '../templates/IGORPro.gitignore');
   });
 
@@ -778,11 +828,12 @@ module.exports = function(app) {
    * $ gen gitignore:idris
    * $ gen gitignore:idris --dest ./foo
    * ```
-   * @name idris
+   * @name gitignore:idris
    * @api public
    */
 
-  app.task('idris', { silent: true }, function() {
+  app.task('idris', ['gitignore-idris']);
+  app.task('gitignore-idris', { silent: true }, function() {
     return file(app, '../templates/Idris.gitignore');
   });
 
@@ -794,11 +845,12 @@ module.exports = function(app) {
    * $ gen gitignore:java
    * $ gen gitignore:java --dest ./foo
    * ```
-   * @name java
+   * @name gitignore:java
    * @api public
    */
 
-  app.task('java', { silent: true }, function() {
+  app.task('java', ['gitignore-java']);
+  app.task('gitignore-java', { silent: true }, function() {
     return file(app, '../templates/Java.gitignore');
   });
 
@@ -810,11 +862,12 @@ module.exports = function(app) {
    * $ gen gitignore:jboss
    * $ gen gitignore:jboss --dest ./foo
    * ```
-   * @name jboss
+   * @name gitignore:jboss
    * @api public
    */
 
-  app.task('jboss', { silent: true }, function() {
+  app.task('jboss', ['gitignore-jboss']);
+  app.task('gitignore-jboss', { silent: true }, function() {
     return file(app, '../templates/Jboss.gitignore');
   });
 
@@ -826,11 +879,12 @@ module.exports = function(app) {
    * $ gen gitignore:jekyll
    * $ gen gitignore:jekyll --dest ./foo
    * ```
-   * @name jekyll
+   * @name gitignore:jekyll
    * @api public
    */
 
-  app.task('jekyll', { silent: true }, function() {
+  app.task('jekyll', ['gitignore-jekyll']);
+  app.task('gitignore-jekyll', { silent: true }, function() {
     return file(app, '../templates/Jekyll.gitignore');
   });
 
@@ -842,11 +896,12 @@ module.exports = function(app) {
    * $ gen gitignore:joomla
    * $ gen gitignore:joomla --dest ./foo
    * ```
-   * @name joomla
+   * @name gitignore:joomla
    * @api public
    */
 
-  app.task('joomla', { silent: true }, function() {
+  app.task('joomla', ['gitignore-joomla']);
+  app.task('gitignore-joomla', { silent: true }, function() {
     return file(app, '../templates/Joomla.gitignore');
   });
 
@@ -858,11 +913,12 @@ module.exports = function(app) {
    * $ gen gitignore:julia
    * $ gen gitignore:julia --dest ./foo
    * ```
-   * @name julia
+   * @name gitignore:julia
    * @api public
    */
 
-  app.task('julia', { silent: true }, function() {
+  app.task('julia', ['gitignore-julia']);
+  app.task('gitignore-julia', { silent: true }, function() {
     return file(app, '../templates/Julia.gitignore');
   });
 
@@ -874,11 +930,12 @@ module.exports = function(app) {
    * $ gen gitignore:kicad
    * $ gen gitignore:kicad --dest ./foo
    * ```
-   * @name kicad
+   * @name gitignore:kicad
    * @api public
    */
 
-  app.task('kicad', { silent: true }, function() {
+  app.task('kicad', ['gitignore-kicad']);
+  app.task('gitignore-kicad', { silent: true }, function() {
     return file(app, '../templates/KiCad.gitignore');
   });
 
@@ -890,11 +947,12 @@ module.exports = function(app) {
    * $ gen gitignore:kohana
    * $ gen gitignore:kohana --dest ./foo
    * ```
-   * @name kohana
+   * @name gitignore:kohana
    * @api public
    */
 
-  app.task('kohana', { silent: true }, function() {
+  app.task('kohana', ['gitignore-kohana']);
+  app.task('gitignore-kohana', { silent: true }, function() {
     return file(app, '../templates/Kohana.gitignore');
   });
 
@@ -906,11 +964,12 @@ module.exports = function(app) {
    * $ gen gitignore:labview
    * $ gen gitignore:labview --dest ./foo
    * ```
-   * @name labview
+   * @name gitignore:labview
    * @api public
    */
 
-  app.task('labview', { silent: true }, function() {
+  app.task('labview', ['gitignore-labview']);
+  app.task('gitignore-labview', { silent: true }, function() {
     return file(app, '../templates/LabVIEW.gitignore');
   });
 
@@ -922,11 +981,12 @@ module.exports = function(app) {
    * $ gen gitignore:laravel
    * $ gen gitignore:laravel --dest ./foo
    * ```
-   * @name laravel
+   * @name gitignore:laravel
    * @api public
    */
 
-  app.task('laravel', { silent: true }, function() {
+  app.task('laravel', ['gitignore-laravel']);
+  app.task('gitignore-laravel', { silent: true }, function() {
     return file(app, '../templates/Laravel.gitignore');
   });
 
@@ -938,11 +998,12 @@ module.exports = function(app) {
    * $ gen gitignore:leiningen
    * $ gen gitignore:leiningen --dest ./foo
    * ```
-   * @name leiningen
+   * @name gitignore:leiningen
    * @api public
    */
 
-  app.task('leiningen', { silent: true }, function() {
+  app.task('leiningen', ['gitignore-leiningen']);
+  app.task('gitignore-leiningen', { silent: true }, function() {
     return file(app, '../templates/Leiningen.gitignore');
   });
 
@@ -954,11 +1015,12 @@ module.exports = function(app) {
    * $ gen gitignore:lemonstand
    * $ gen gitignore:lemonstand --dest ./foo
    * ```
-   * @name lemonstand
+   * @name gitignore:lemonstand
    * @api public
    */
 
-  app.task('lemonstand', { silent: true }, function() {
+  app.task('lemonstand', ['gitignore-lemonstand']);
+  app.task('gitignore-lemonstand', { silent: true }, function() {
     return file(app, '../templates/LemonStand.gitignore');
   });
 
@@ -970,11 +1032,12 @@ module.exports = function(app) {
    * $ gen gitignore:lilypond
    * $ gen gitignore:lilypond --dest ./foo
    * ```
-   * @name lilypond
+   * @name gitignore:lilypond
    * @api public
    */
 
-  app.task('lilypond', { silent: true }, function() {
+  app.task('lilypond', ['gitignore-lilypond']);
+  app.task('gitignore-lilypond', { silent: true }, function() {
     return file(app, '../templates/Lilypond.gitignore');
   });
 
@@ -986,11 +1049,12 @@ module.exports = function(app) {
    * $ gen gitignore:lithium
    * $ gen gitignore:lithium --dest ./foo
    * ```
-   * @name lithium
+   * @name gitignore:lithium
    * @api public
    */
 
-  app.task('lithium', { silent: true }, function() {
+  app.task('lithium', ['gitignore-lithium']);
+  app.task('gitignore-lithium', { silent: true }, function() {
     return file(app, '../templates/Lithium.gitignore');
   });
 
@@ -1002,11 +1066,12 @@ module.exports = function(app) {
    * $ gen gitignore:lua
    * $ gen gitignore:lua --dest ./foo
    * ```
-   * @name lua
+   * @name gitignore:lua
    * @api public
    */
 
-  app.task('lua', { silent: true }, function() {
+  app.task('lua', ['gitignore-lua']);
+  app.task('gitignore-lua', { silent: true }, function() {
     return file(app, '../templates/Lua.gitignore');
   });
 
@@ -1018,11 +1083,12 @@ module.exports = function(app) {
    * $ gen gitignore:magento
    * $ gen gitignore:magento --dest ./foo
    * ```
-   * @name magento
+   * @name gitignore:magento
    * @api public
    */
 
-  app.task('magento', { silent: true }, function() {
+  app.task('magento', ['gitignore-magento']);
+  app.task('gitignore-magento', { silent: true }, function() {
     return file(app, '../templates/Magento.gitignore');
   });
 
@@ -1034,11 +1100,12 @@ module.exports = function(app) {
    * $ gen gitignore:maven
    * $ gen gitignore:maven --dest ./foo
    * ```
-   * @name maven
+   * @name gitignore:maven
    * @api public
    */
 
-  app.task('maven', { silent: true }, function() {
+  app.task('maven', ['gitignore-maven']);
+  app.task('gitignore-maven', { silent: true }, function() {
     return file(app, '../templates/Maven.gitignore');
   });
 
@@ -1050,11 +1117,12 @@ module.exports = function(app) {
    * $ gen gitignore:mercury
    * $ gen gitignore:mercury --dest ./foo
    * ```
-   * @name mercury
+   * @name gitignore:mercury
    * @api public
    */
 
-  app.task('mercury', { silent: true }, function() {
+  app.task('mercury', ['gitignore-mercury']);
+  app.task('gitignore-mercury', { silent: true }, function() {
     return file(app, '../templates/Mercury.gitignore');
   });
 
@@ -1066,11 +1134,12 @@ module.exports = function(app) {
    * $ gen gitignore:metaprogrammingsystem
    * $ gen gitignore:metaprogrammingsystem --dest ./foo
    * ```
-   * @name metaprogrammingsystem
+   * @name gitignore:metaprogrammingsystem
    * @api public
    */
 
-  app.task('metaprogrammingsystem', { silent: true }, function() {
+  app.task('metaprogrammingsystem', ['gitignore-metaprogrammingsystem']);
+  app.task('gitignore-metaprogrammingsystem', { silent: true }, function() {
     return file(app, '../templates/MetaProgrammingSystem.gitignore');
   });
 
@@ -1082,11 +1151,12 @@ module.exports = function(app) {
    * $ gen gitignore:nanoc
    * $ gen gitignore:nanoc --dest ./foo
    * ```
-   * @name nanoc
+   * @name gitignore:nanoc
    * @api public
    */
 
-  app.task('nanoc', { silent: true }, function() {
+  app.task('nanoc', ['gitignore-nanoc']);
+  app.task('gitignore-nanoc', { silent: true }, function() {
     return file(app, '../templates/Nanoc.gitignore');
   });
 
@@ -1098,11 +1168,12 @@ module.exports = function(app) {
    * $ gen gitignore:nim
    * $ gen gitignore:nim --dest ./foo
    * ```
-   * @name nim
+   * @name gitignore:nim
    * @api public
    */
 
-  app.task('nim', { silent: true }, function() {
+  app.task('nim', ['gitignore-nim']);
+  app.task('gitignore-nim', { silent: true }, function() {
     return file(app, '../templates/Nim.gitignore');
   });
 
@@ -1114,11 +1185,12 @@ module.exports = function(app) {
    * $ gen gitignore:node
    * $ gen gitignore:node --dest ./foo
    * ```
-   * @name node
+   * @name gitignore:node
    * @api public
    */
 
-  app.task('node', { silent: true }, function() {
+  app.task('node', ['gitignore-node']);
+  app.task('gitignore-node', { silent: true }, function() {
     return file(app, '../templates/Node.gitignore');
   });
 
@@ -1130,11 +1202,12 @@ module.exports = function(app) {
    * $ gen gitignore:ocaml
    * $ gen gitignore:ocaml --dest ./foo
    * ```
-   * @name ocaml
+   * @name gitignore:ocaml
    * @api public
    */
 
-  app.task('ocaml', { silent: true }, function() {
+  app.task('ocaml', ['gitignore-ocaml']);
+  app.task('gitignore-ocaml', { silent: true }, function() {
     return file(app, '../templates/OCaml.gitignore');
   });
 
@@ -1146,11 +1219,12 @@ module.exports = function(app) {
    * $ gen gitignore:objective-c
    * $ gen gitignore:objective-c --dest ./foo
    * ```
-   * @name objective-c
+   * @name gitignore:objective-c
    * @api public
    */
 
-  app.task('objective-c', { silent: true }, function() {
+  app.task('objective-c', ['gitignore-objective-c']);
+  app.task('gitignore-objective-c', { silent: true }, function() {
     return file(app, '../templates/Objective-C.gitignore');
   });
 
@@ -1162,11 +1236,12 @@ module.exports = function(app) {
    * $ gen gitignore:opa
    * $ gen gitignore:opa --dest ./foo
    * ```
-   * @name opa
+   * @name gitignore:opa
    * @api public
    */
 
-  app.task('opa', { silent: true }, function() {
+  app.task('opa', ['gitignore-opa']);
+  app.task('gitignore-opa', { silent: true }, function() {
     return file(app, '../templates/Opa.gitignore');
   });
 
@@ -1178,11 +1253,12 @@ module.exports = function(app) {
    * $ gen gitignore:opencart
    * $ gen gitignore:opencart --dest ./foo
    * ```
-   * @name opencart
+   * @name gitignore:opencart
    * @api public
    */
 
-  app.task('opencart', { silent: true }, function() {
+  app.task('opencart', ['gitignore-opencart']);
+  app.task('gitignore-opencart', { silent: true }, function() {
     return file(app, '../templates/OpenCart.gitignore');
   });
 
@@ -1194,11 +1270,12 @@ module.exports = function(app) {
    * $ gen gitignore:oracleforms
    * $ gen gitignore:oracleforms --dest ./foo
    * ```
-   * @name oracleforms
+   * @name gitignore:oracleforms
    * @api public
    */
 
-  app.task('oracleforms', { silent: true }, function() {
+  app.task('oracleforms', ['gitignore-oracleforms']);
+  app.task('gitignore-oracleforms', { silent: true }, function() {
     return file(app, '../templates/OracleForms.gitignore');
   });
 
@@ -1210,11 +1287,12 @@ module.exports = function(app) {
    * $ gen gitignore:packer
    * $ gen gitignore:packer --dest ./foo
    * ```
-   * @name packer
+   * @name gitignore:packer
    * @api public
    */
 
-  app.task('packer', { silent: true }, function() {
+  app.task('packer', ['gitignore-packer']);
+  app.task('gitignore-packer', { silent: true }, function() {
     return file(app, '../templates/Packer.gitignore');
   });
 
@@ -1226,11 +1304,12 @@ module.exports = function(app) {
    * $ gen gitignore:perl
    * $ gen gitignore:perl --dest ./foo
    * ```
-   * @name perl
+   * @name gitignore:perl
    * @api public
    */
 
-  app.task('perl', { silent: true }, function() {
+  app.task('perl', ['gitignore-perl']);
+  app.task('gitignore-perl', { silent: true }, function() {
     return file(app, '../templates/Perl.gitignore');
   });
 
@@ -1242,11 +1321,12 @@ module.exports = function(app) {
    * $ gen gitignore:phalcon
    * $ gen gitignore:phalcon --dest ./foo
    * ```
-   * @name phalcon
+   * @name gitignore:phalcon
    * @api public
    */
 
-  app.task('phalcon', { silent: true }, function() {
+  app.task('phalcon', ['gitignore-phalcon']);
+  app.task('gitignore-phalcon', { silent: true }, function() {
     return file(app, '../templates/Phalcon.gitignore');
   });
 
@@ -1258,11 +1338,12 @@ module.exports = function(app) {
    * $ gen gitignore:playframework
    * $ gen gitignore:playframework --dest ./foo
    * ```
-   * @name playframework
+   * @name gitignore:playframework
    * @api public
    */
 
-  app.task('playframework', { silent: true }, function() {
+  app.task('playframework', ['gitignore-playframework']);
+  app.task('gitignore-playframework', { silent: true }, function() {
     return file(app, '../templates/PlayFramework.gitignore');
   });
 
@@ -1274,11 +1355,12 @@ module.exports = function(app) {
    * $ gen gitignore:plone
    * $ gen gitignore:plone --dest ./foo
    * ```
-   * @name plone
+   * @name gitignore:plone
    * @api public
    */
 
-  app.task('plone', { silent: true }, function() {
+  app.task('plone', ['gitignore-plone']);
+  app.task('gitignore-plone', { silent: true }, function() {
     return file(app, '../templates/Plone.gitignore');
   });
 
@@ -1290,11 +1372,12 @@ module.exports = function(app) {
    * $ gen gitignore:prestashop
    * $ gen gitignore:prestashop --dest ./foo
    * ```
-   * @name prestashop
+   * @name gitignore:prestashop
    * @api public
    */
 
-  app.task('prestashop', { silent: true }, function() {
+  app.task('prestashop', ['gitignore-prestashop']);
+  app.task('gitignore-prestashop', { silent: true }, function() {
     return file(app, '../templates/Prestashop.gitignore');
   });
 
@@ -1306,11 +1389,12 @@ module.exports = function(app) {
    * $ gen gitignore:processing
    * $ gen gitignore:processing --dest ./foo
    * ```
-   * @name processing
+   * @name gitignore:processing
    * @api public
    */
 
-  app.task('processing', { silent: true }, function() {
+  app.task('processing', ['gitignore-processing']);
+  app.task('gitignore-processing', { silent: true }, function() {
     return file(app, '../templates/Processing.gitignore');
   });
 
@@ -1322,11 +1406,12 @@ module.exports = function(app) {
    * $ gen gitignore:python
    * $ gen gitignore:python --dest ./foo
    * ```
-   * @name python
+   * @name gitignore:python
    * @api public
    */
 
-  app.task('python', { silent: true }, function() {
+  app.task('python', ['gitignore-python']);
+  app.task('gitignore-python', { silent: true }, function() {
     return file(app, '../templates/Python.gitignore');
   });
 
@@ -1338,11 +1423,12 @@ module.exports = function(app) {
    * $ gen gitignore:qooxdoo
    * $ gen gitignore:qooxdoo --dest ./foo
    * ```
-   * @name qooxdoo
+   * @name gitignore:qooxdoo
    * @api public
    */
 
-  app.task('qooxdoo', { silent: true }, function() {
+  app.task('qooxdoo', ['gitignore-qooxdoo']);
+  app.task('gitignore-qooxdoo', { silent: true }, function() {
     return file(app, '../templates/Qooxdoo.gitignore');
   });
 
@@ -1354,11 +1440,12 @@ module.exports = function(app) {
    * $ gen gitignore:qt
    * $ gen gitignore:qt --dest ./foo
    * ```
-   * @name qt
+   * @name gitignore:qt
    * @api public
    */
 
-  app.task('qt', { silent: true }, function() {
+  app.task('qt', ['gitignore-qt']);
+  app.task('gitignore-qt', { silent: true }, function() {
     return file(app, '../templates/Qt.gitignore');
   });
 
@@ -1370,11 +1457,12 @@ module.exports = function(app) {
    * $ gen gitignore:r
    * $ gen gitignore:r --dest ./foo
    * ```
-   * @name r
+   * @name gitignore:r
    * @api public
    */
 
-  app.task('r', { silent: true }, function() {
+  app.task('r', ['gitignore-r']);
+  app.task('gitignore-r', { silent: true }, function() {
     return file(app, '../templates/R.gitignore');
   });
 
@@ -1386,11 +1474,12 @@ module.exports = function(app) {
    * $ gen gitignore:ros
    * $ gen gitignore:ros --dest ./foo
    * ```
-   * @name ros
+   * @name gitignore:ros
    * @api public
    */
 
-  app.task('ros', { silent: true }, function() {
+  app.task('ros', ['gitignore-ros']);
+  app.task('gitignore-ros', { silent: true }, function() {
     return file(app, '../templates/ROS.gitignore');
   });
 
@@ -1402,11 +1491,12 @@ module.exports = function(app) {
    * $ gen gitignore:rails
    * $ gen gitignore:rails --dest ./foo
    * ```
-   * @name rails
+   * @name gitignore:rails
    * @api public
    */
 
-  app.task('rails', { silent: true }, function() {
+  app.task('rails', ['gitignore-rails']);
+  app.task('gitignore-rails', { silent: true }, function() {
     return file(app, '../templates/Rails.gitignore');
   });
 
@@ -1418,11 +1508,12 @@ module.exports = function(app) {
    * $ gen gitignore:rhodesrhomobile
    * $ gen gitignore:rhodesrhomobile --dest ./foo
    * ```
-   * @name rhodesrhomobile
+   * @name gitignore:rhodesrhomobile
    * @api public
    */
 
-  app.task('rhodesrhomobile', { silent: true }, function() {
+  app.task('rhodesrhomobile', ['gitignore-rhodesrhomobile']);
+  app.task('gitignore-rhodesrhomobile', { silent: true }, function() {
     return file(app, '../templates/RhodesRhomobile.gitignore');
   });
 
@@ -1434,11 +1525,12 @@ module.exports = function(app) {
    * $ gen gitignore:ruby
    * $ gen gitignore:ruby --dest ./foo
    * ```
-   * @name ruby
+   * @name gitignore:ruby
    * @api public
    */
 
-  app.task('ruby', { silent: true }, function() {
+  app.task('ruby', ['gitignore-ruby']);
+  app.task('gitignore-ruby', { silent: true }, function() {
     return file(app, '../templates/Ruby.gitignore');
   });
 
@@ -1450,11 +1542,12 @@ module.exports = function(app) {
    * $ gen gitignore:rust
    * $ gen gitignore:rust --dest ./foo
    * ```
-   * @name rust
+   * @name gitignore:rust
    * @api public
    */
 
-  app.task('rust', { silent: true }, function() {
+  app.task('rust', ['gitignore-rust']);
+  app.task('gitignore-rust', { silent: true }, function() {
     return file(app, '../templates/Rust.gitignore');
   });
 
@@ -1466,11 +1559,12 @@ module.exports = function(app) {
    * $ gen gitignore:scons
    * $ gen gitignore:scons --dest ./foo
    * ```
-   * @name scons
+   * @name gitignore:scons
    * @api public
    */
 
-  app.task('scons', { silent: true }, function() {
+  app.task('scons', ['gitignore-scons']);
+  app.task('gitignore-scons', { silent: true }, function() {
     return file(app, '../templates/SCons.gitignore');
   });
 
@@ -1482,11 +1576,12 @@ module.exports = function(app) {
    * $ gen gitignore:sass
    * $ gen gitignore:sass --dest ./foo
    * ```
-   * @name sass
+   * @name gitignore:sass
    * @api public
    */
 
-  app.task('sass', { silent: true }, function() {
+  app.task('sass', ['gitignore-sass']);
+  app.task('gitignore-sass', { silent: true }, function() {
     return file(app, '../templates/Sass.gitignore');
   });
 
@@ -1498,11 +1593,12 @@ module.exports = function(app) {
    * $ gen gitignore:scala
    * $ gen gitignore:scala --dest ./foo
    * ```
-   * @name scala
+   * @name gitignore:scala
    * @api public
    */
 
-  app.task('scala', { silent: true }, function() {
+  app.task('scala', ['gitignore-scala']);
+  app.task('gitignore-scala', { silent: true }, function() {
     return file(app, '../templates/Scala.gitignore');
   });
 
@@ -1514,11 +1610,12 @@ module.exports = function(app) {
    * $ gen gitignore:scheme
    * $ gen gitignore:scheme --dest ./foo
    * ```
-   * @name scheme
+   * @name gitignore:scheme
    * @api public
    */
 
-  app.task('scheme', { silent: true }, function() {
+  app.task('scheme', ['gitignore-scheme']);
+  app.task('gitignore-scheme', { silent: true }, function() {
     return file(app, '../templates/Scheme.gitignore');
   });
 
@@ -1530,11 +1627,12 @@ module.exports = function(app) {
    * $ gen gitignore:scrivener
    * $ gen gitignore:scrivener --dest ./foo
    * ```
-   * @name scrivener
+   * @name gitignore:scrivener
    * @api public
    */
 
-  app.task('scrivener', { silent: true }, function() {
+  app.task('scrivener', ['gitignore-scrivener']);
+  app.task('gitignore-scrivener', { silent: true }, function() {
     return file(app, '../templates/Scrivener.gitignore');
   });
 
@@ -1546,11 +1644,12 @@ module.exports = function(app) {
    * $ gen gitignore:sdcc
    * $ gen gitignore:sdcc --dest ./foo
    * ```
-   * @name sdcc
+   * @name gitignore:sdcc
    * @api public
    */
 
-  app.task('sdcc', { silent: true }, function() {
+  app.task('sdcc', ['gitignore-sdcc']);
+  app.task('gitignore-sdcc', { silent: true }, function() {
     return file(app, '../templates/Sdcc.gitignore');
   });
 
@@ -1562,11 +1661,12 @@ module.exports = function(app) {
    * $ gen gitignore:seamgen
    * $ gen gitignore:seamgen --dest ./foo
    * ```
-   * @name seamgen
+   * @name gitignore:seamgen
    * @api public
    */
 
-  app.task('seamgen', { silent: true }, function() {
+  app.task('seamgen', ['gitignore-seamgen']);
+  app.task('gitignore-seamgen', { silent: true }, function() {
     return file(app, '../templates/SeamGen.gitignore');
   });
 
@@ -1578,11 +1678,12 @@ module.exports = function(app) {
    * $ gen gitignore:sketchup
    * $ gen gitignore:sketchup --dest ./foo
    * ```
-   * @name sketchup
+   * @name gitignore:sketchup
    * @api public
    */
 
-  app.task('sketchup', { silent: true }, function() {
+  app.task('sketchup', ['gitignore-sketchup']);
+  app.task('gitignore-sketchup', { silent: true }, function() {
     return file(app, '../templates/SketchUp.gitignore');
   });
 
@@ -1594,11 +1695,12 @@ module.exports = function(app) {
    * $ gen gitignore:smalltalk
    * $ gen gitignore:smalltalk --dest ./foo
    * ```
-   * @name smalltalk
+   * @name gitignore:smalltalk
    * @api public
    */
 
-  app.task('smalltalk', { silent: true }, function() {
+  app.task('smalltalk', ['gitignore-smalltalk']);
+  app.task('gitignore-smalltalk', { silent: true }, function() {
     return file(app, '../templates/Smalltalk.gitignore');
   });
 
@@ -1610,11 +1712,12 @@ module.exports = function(app) {
    * $ gen gitignore:stella
    * $ gen gitignore:stella --dest ./foo
    * ```
-   * @name stella
+   * @name gitignore:stella
    * @api public
    */
 
-  app.task('stella', { silent: true }, function() {
+  app.task('stella', ['gitignore-stella']);
+  app.task('gitignore-stella', { silent: true }, function() {
     return file(app, '../templates/Stella.gitignore');
   });
 
@@ -1626,11 +1729,12 @@ module.exports = function(app) {
    * $ gen gitignore:sugarcrm
    * $ gen gitignore:sugarcrm --dest ./foo
    * ```
-   * @name sugarcrm
+   * @name gitignore:sugarcrm
    * @api public
    */
 
-  app.task('sugarcrm', { silent: true }, function() {
+  app.task('sugarcrm', ['gitignore-sugarcrm']);
+  app.task('gitignore-sugarcrm', { silent: true }, function() {
     return file(app, '../templates/SugarCRM.gitignore');
   });
 
@@ -1642,11 +1746,12 @@ module.exports = function(app) {
    * $ gen gitignore:swift
    * $ gen gitignore:swift --dest ./foo
    * ```
-   * @name swift
+   * @name gitignore:swift
    * @api public
    */
 
-  app.task('swift', { silent: true }, function() {
+  app.task('swift', ['gitignore-swift']);
+  app.task('gitignore-swift', { silent: true }, function() {
     return file(app, '../templates/Swift.gitignore');
   });
 
@@ -1658,11 +1763,12 @@ module.exports = function(app) {
    * $ gen gitignore:symfony
    * $ gen gitignore:symfony --dest ./foo
    * ```
-   * @name symfony
+   * @name gitignore:symfony
    * @api public
    */
 
-  app.task('symfony', { silent: true }, function() {
+  app.task('symfony', ['gitignore-symfony']);
+  app.task('gitignore-symfony', { silent: true }, function() {
     return file(app, '../templates/Symfony.gitignore');
   });
 
@@ -1674,11 +1780,12 @@ module.exports = function(app) {
    * $ gen gitignore:symphonycms
    * $ gen gitignore:symphonycms --dest ./foo
    * ```
-   * @name symphonycms
+   * @name gitignore:symphonycms
    * @api public
    */
 
-  app.task('symphonycms', { silent: true }, function() {
+  app.task('symphonycms', ['gitignore-symphonycms']);
+  app.task('gitignore-symphonycms', { silent: true }, function() {
     return file(app, '../templates/SymphonyCMS.gitignore');
   });
 
@@ -1690,11 +1797,12 @@ module.exports = function(app) {
    * $ gen gitignore:tex
    * $ gen gitignore:tex --dest ./foo
    * ```
-   * @name tex
+   * @name gitignore:tex
    * @api public
    */
 
-  app.task('tex', { silent: true }, function() {
+  app.task('tex', ['gitignore-tex']);
+  app.task('gitignore-tex', { silent: true }, function() {
     return file(app, '../templates/TeX.gitignore');
   });
 
@@ -1706,11 +1814,12 @@ module.exports = function(app) {
    * $ gen gitignore:terraform
    * $ gen gitignore:terraform --dest ./foo
    * ```
-   * @name terraform
+   * @name gitignore:terraform
    * @api public
    */
 
-  app.task('terraform', { silent: true }, function() {
+  app.task('terraform', ['gitignore-terraform']);
+  app.task('gitignore-terraform', { silent: true }, function() {
     return file(app, '../templates/Terraform.gitignore');
   });
 
@@ -1722,11 +1831,12 @@ module.exports = function(app) {
    * $ gen gitignore:textpattern
    * $ gen gitignore:textpattern --dest ./foo
    * ```
-   * @name textpattern
+   * @name gitignore:textpattern
    * @api public
    */
 
-  app.task('textpattern', { silent: true }, function() {
+  app.task('textpattern', ['gitignore-textpattern']);
+  app.task('gitignore-textpattern', { silent: true }, function() {
     return file(app, '../templates/Textpattern.gitignore');
   });
 
@@ -1738,11 +1848,12 @@ module.exports = function(app) {
    * $ gen gitignore:turbogears2
    * $ gen gitignore:turbogears2 --dest ./foo
    * ```
-   * @name turbogears2
+   * @name gitignore:turbogears2
    * @api public
    */
 
-  app.task('turbogears2', { silent: true }, function() {
+  app.task('turbogears2', ['gitignore-turbogears2']);
+  app.task('gitignore-turbogears2', { silent: true }, function() {
     return file(app, '../templates/TurboGears2.gitignore');
   });
 
@@ -1754,11 +1865,12 @@ module.exports = function(app) {
    * $ gen gitignore:typo3
    * $ gen gitignore:typo3 --dest ./foo
    * ```
-   * @name typo3
+   * @name gitignore:typo3
    * @api public
    */
 
-  app.task('typo3', { silent: true }, function() {
+  app.task('typo3', ['gitignore-typo3']);
+  app.task('gitignore-typo3', { silent: true }, function() {
     return file(app, '../templates/Typo3.gitignore');
   });
 
@@ -1770,11 +1882,12 @@ module.exports = function(app) {
    * $ gen gitignore:umbraco
    * $ gen gitignore:umbraco --dest ./foo
    * ```
-   * @name umbraco
+   * @name gitignore:umbraco
    * @api public
    */
 
-  app.task('umbraco', { silent: true }, function() {
+  app.task('umbraco', ['gitignore-umbraco']);
+  app.task('gitignore-umbraco', { silent: true }, function() {
     return file(app, '../templates/Umbraco.gitignore');
   });
 
@@ -1786,11 +1899,12 @@ module.exports = function(app) {
    * $ gen gitignore:unity
    * $ gen gitignore:unity --dest ./foo
    * ```
-   * @name unity
+   * @name gitignore:unity
    * @api public
    */
 
-  app.task('unity', { silent: true }, function() {
+  app.task('unity', ['gitignore-unity']);
+  app.task('gitignore-unity', { silent: true }, function() {
     return file(app, '../templates/Unity.gitignore');
   });
 
@@ -1802,11 +1916,12 @@ module.exports = function(app) {
    * $ gen gitignore:unrealengine
    * $ gen gitignore:unrealengine --dest ./foo
    * ```
-   * @name unrealengine
+   * @name gitignore:unrealengine
    * @api public
    */
 
-  app.task('unrealengine', { silent: true }, function() {
+  app.task('unrealengine', ['gitignore-unrealengine']);
+  app.task('gitignore-unrealengine', { silent: true }, function() {
     return file(app, '../templates/UnrealEngine.gitignore');
   });
 
@@ -1818,11 +1933,12 @@ module.exports = function(app) {
    * $ gen gitignore:vvvv
    * $ gen gitignore:vvvv --dest ./foo
    * ```
-   * @name vvvv
+   * @name gitignore:vvvv
    * @api public
    */
 
-  app.task('vvvv', { silent: true }, function() {
+  app.task('vvvv', ['gitignore-vvvv']);
+  app.task('gitignore-vvvv', { silent: true }, function() {
     return file(app, '../templates/VVVV.gitignore');
   });
 
@@ -1834,11 +1950,12 @@ module.exports = function(app) {
    * $ gen gitignore:visualstudio
    * $ gen gitignore:visualstudio --dest ./foo
    * ```
-   * @name visualstudio
+   * @name gitignore:visualstudio
    * @api public
    */
 
-  app.task('visualstudio', { silent: true }, function() {
+  app.task('visualstudio', ['gitignore-visualstudio']);
+  app.task('gitignore-visualstudio', { silent: true }, function() {
     return file(app, '../templates/VisualStudio.gitignore');
   });
 
@@ -1850,11 +1967,12 @@ module.exports = function(app) {
    * $ gen gitignore:waf
    * $ gen gitignore:waf --dest ./foo
    * ```
-   * @name waf
+   * @name gitignore:waf
    * @api public
    */
 
-  app.task('waf', { silent: true }, function() {
+  app.task('waf', ['gitignore-waf']);
+  app.task('gitignore-waf', { silent: true }, function() {
     return file(app, '../templates/Waf.gitignore');
   });
 
@@ -1866,11 +1984,12 @@ module.exports = function(app) {
    * $ gen gitignore:wordpress
    * $ gen gitignore:wordpress --dest ./foo
    * ```
-   * @name wordpress
+   * @name gitignore:wordpress
    * @api public
    */
 
-  app.task('wordpress', { silent: true }, function() {
+  app.task('wordpress', ['gitignore-wordpress']);
+  app.task('gitignore-wordpress', { silent: true }, function() {
     return file(app, '../templates/WordPress.gitignore');
   });
 
@@ -1882,11 +2001,12 @@ module.exports = function(app) {
    * $ gen gitignore:xojo
    * $ gen gitignore:xojo --dest ./foo
    * ```
-   * @name xojo
+   * @name gitignore:xojo
    * @api public
    */
 
-  app.task('xojo', { silent: true }, function() {
+  app.task('xojo', ['gitignore-xojo']);
+  app.task('gitignore-xojo', { silent: true }, function() {
     return file(app, '../templates/Xojo.gitignore');
   });
 
@@ -1898,11 +2018,12 @@ module.exports = function(app) {
    * $ gen gitignore:yeoman
    * $ gen gitignore:yeoman --dest ./foo
    * ```
-   * @name yeoman
+   * @name gitignore:yeoman
    * @api public
    */
 
-  app.task('yeoman', { silent: true }, function() {
+  app.task('yeoman', ['gitignore-yeoman']);
+  app.task('gitignore-yeoman', { silent: true }, function() {
     return file(app, '../templates/Yeoman.gitignore');
   });
 
@@ -1914,11 +2035,12 @@ module.exports = function(app) {
    * $ gen gitignore:yii
    * $ gen gitignore:yii --dest ./foo
    * ```
-   * @name yii
+   * @name gitignore:yii
    * @api public
    */
 
-  app.task('yii', { silent: true }, function() {
+  app.task('yii', ['gitignore-yii']);
+  app.task('gitignore-yii', { silent: true }, function() {
     return file(app, '../templates/Yii.gitignore');
   });
 
@@ -1930,11 +2052,12 @@ module.exports = function(app) {
    * $ gen gitignore:zendframework
    * $ gen gitignore:zendframework --dest ./foo
    * ```
-   * @name zendframework
+   * @name gitignore:zendframework
    * @api public
    */
 
-  app.task('zendframework', { silent: true }, function() {
+  app.task('zendframework', ['gitignore-zendframework']);
+  app.task('gitignore-zendframework', { silent: true }, function() {
     return file(app, '../templates/ZendFramework.gitignore');
   });
 
@@ -1946,23 +2069,13 @@ module.exports = function(app) {
    * $ gen gitignore:zephir
    * $ gen gitignore:zephir --dest ./foo
    * ```
-   * @name zephir
+   * @name gitignore:zephir
    * @api public
    */
 
-  app.task('zephir', { silent: true }, function() {
+  app.task('zephir', ['gitignore-zephir']);
+  app.task('gitignore-zephir', { silent: true }, function() {
     return file(app, '../templates/Zephir.gitignore');
   });
 
 };
-
-/**
- * Generate a file
- */
-
-function file(app, name) {
-  return app.src(name, { cwd: __dirname })
-    .pipe(app.renderFile('*')).on('error', console.log)
-    .pipe(app.conflicts(app.cwd))
-    .pipe(app.dest(app.cwd));
-}
