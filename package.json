@@ -1,7 +1,7 @@
 {
   "name": "generate-gitignore",
   "description": "Generate any local or global .gitignore file from the github/gitignore repository. Use from the command line when Generate's CLI is installed globally, or use as a plugin or sub-generator in your own generator.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/generate/generate-gitignore",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "generate/generate-gitignore",
