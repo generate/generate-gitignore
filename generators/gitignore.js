@@ -123,6 +123,24 @@ module.exports = function(app) {
     return file(app, '../templates/ArchLinuxPackages.gitignore');
   });
 
+
+  /**
+   * Generate a `.gitignore` file for AspNetCORE to the current
+   * working directory.
+   *
+   * ```sh
+   * $ gen gitignore:aspnetcore
+   * $ gen gitignore:aspnetcore --dest ./foo
+   * ```
+   * @name gitignore:aspnetcore
+   * @api public
+   */
+
+   app.task('aspnetcore', ['gitignore-aspnetcore']);
+   app.task('gitignore-aspnetcore', { silent: true }, function() {
+     return file(app, '../templates/AspNetCORE.gitignore');
+   });
+
   /**
    * Generate a `.gitignore` file for Autotools to the current
    * working directory.
